@@ -1,14 +1,24 @@
 # MU SVEN Admin Gothic — R20
 
-Gói mã nguồn Gothic R20 cho công cụ quản trị MU Online.
+Gói mã nguồn R20 Gothic của công cụ quản trị MU Online.
 
-## Gói source
-- `MUSVEN_Admin_Gothic_Complete_20261031_R20_Source.zip`
-- SHA-256: `D7AC3FC24BB29F7AD3CD180C63AFDE542DD30BCF53A266DF87BC8486284EB268`
-- Đã rà soát: gói có `Config.ini.template`, không có `Config.ini` thật hoặc tệp `.env`.
+## Gói nguồn và checkpoint
 
-## Checkpoint
-Checkpoint đầy đủ được giữ cục bộ, không đưa lên repo công khai vì archive có `Runtime/Config.ini`. Xem `MUSVEN_Gothic_R20_checkpoint_manifest.txt` để biết checksum và tình trạng lưu trữ. Không đưa cấu hình kết nối hoặc dữ liệu database lên repo.
+- `MUSVEN_R20_Gothic_Account_UI_20261102_checkpoint.zip`
+- SHA-256: `7D383752D87FD8E9D082AE2295A248412C71EEE4B3A83B051A8DDB3583767BC0`
+- Archive: 1,052 files; chứa source và tài nguyên, không chứa `bin`, `obj`, `Config.ini` thật, `.env`, database dump hoặc bí mật cấu hình.
+- `MUSVEN_R20_Gothic_Account_UI_20261102_checkpoint.txt` ghi checksum và trạng thái nghiệm thu.
 
-## Nghiệm thu
-Gothic UI đã chạy trong VM; kết nối SQL Muonline và truy vấn online được kiểm tra ở chế độ chỉ đọc. Dữ liệu tài khoản/kho thật và lệnh điều khiển GameServer chưa nghiệm thu. Xem `MUSVEN_Gothic_R20_ACCEPTANCE_20261101.txt`.
+Bản Release DLL riêng được giữ cùng checkpoint cục bộ; không đưa lên repo công khai.
+
+## Kiểm tra
+
+- Release build: 0 warning, 0 error.
+- `node --check`: `app.js`, `api.js`, `options.js` đều đạt.
+- Contract audit: 27 khai báo API, 27 route backend, 24 lời gọi UI.
+- VM: mở R20 qua nút `GOTHIC UI`; trang Dashboard Gothic, trang nhân vật rỗng khi chưa chọn, kho ba vùng, catalog 941 mục chỉ đọc đã hiển thị.
+- Mô hình 3D đang là mẫu xem trước, chưa chứng minh đồng bộ trang bị của nhân vật online. Ba thẻ dịch vụ hiện `KHÔNG THỂ XÁC MINH`.
+
+## Chưa nghiệm thu
+
+Ghi SQL/migration, lưu currency, Harmony/Socket, kéo thả kho và lưu item vẫn **CHƯA NGHIỆM THU**. Không chạy kiểm thử ghi database hoặc điều khiển/dừng/khởi động lại dịch vụ MU.

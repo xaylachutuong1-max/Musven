@@ -1,0 +1,14 @@
+MUSVEN Gothic Admin R20 — account UI checkpoint — 2026-11-02
+Source archive: E:\GPT\2026-10-28\remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-12\work\backups\MUSVEN_R20_Gothic_Account_UI_20261102_checkpoint.zip
+Source archive SHA-256: 7D383752D87FD8E9D082AE2295A248412C71EEE4B3A83B051A8DDB3583767BC0
+Archive entries: 1052
+Separate Release DLL: E:\GPT\2026-10-28\remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-12\work\backups\MUSVEN_R20_Gothic_Account_UI_20261102_checkpoint_MU_SVEN_09Q.dll
+Release/VM/DLL backup SHA-256: 2FC62F84FDE9C630DFD76DDCB9DCF27DCB95899BDA80BAA33798EF36DCBC9B8D
+VM DLL SHA-256: 2FC62F84FDE9C630DFD76DDCB9DCF27DCB95899BDA80BAA33798EF36DCBC9B8D
+DLL backup SHA-256: 2FC62F84FDE9C630DFD76DDCB9DCF27DCB95899BDA80BAA33798EF36DCBC9B8D
+Actual Config.ini included: False
+Live Config.ini, database, and MU services were not modified by checkpoint creation.
+UI acceptance: Gothic account dashboard rendered in the VM with bevelled panels and view-only sample 3D character preview; Character page opened in empty state; Warehouse showed three panels; read-only Item Catalog displayed 941 entries.
+Build and static verification: Release build succeeded with 0 warnings/0 errors; node --check app.js/api.js/options.js passed; contract check passed (27 declarations, 27 backend routes, 24 UI API calls).
+Not accepted: SQL writes/migrations, currency saves, Harmony/Socket writes, warehouse drag/drop, item writes, and live online-character model synchronization.
+R17 rollback source and prior checkpoints remain untouched.
