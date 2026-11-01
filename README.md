@@ -1,18 +1,14 @@
 # MU SVEN Admin Gothic — R20
 
-Repo này lưu gói source R20 và checkpoint của công cụ quản trị MU Online.
+Gói mã nguồn Gothic R20 cho công cụ quản trị MU Online.
 
-## Tệp phát hành
+## Gói source
+- `MUSVEN_Admin_Gothic_Complete_20261031_R20_Source.zip`
+- SHA-256: `D7AC3FC24BB29F7AD3CD180C63AFDE542DD30BCF53A266DF87BC8486284EB268`
+- Đã rà soát: gói có `Config.ini.template`, không có `Config.ini` thật hoặc tệp `.env`.
 
-- `MUSVEN_Admin_Gothic_Complete_20261031_R20_Source.zip`: gói source đã rà soát; chỉ có `Config.ini.template`, không kèm `Config.ini` chứa thông tin kết nối.
-- `MUSVEN_Gothic_R20_checkpoint_20261031.zip`: checkpoint khôi phục R20.
-- `MUSVEN_Gothic_R20_checkpoint_20261031.txt`: manifest checkpoint và mã SHA-256.
-- `MUSVEN_Gothic_R20_ACCEPTANCE_20261101.txt`: biên bản nghiệm thu một phần trong VM.
+## Checkpoint
+Checkpoint đầy đủ được giữ cục bộ, không đưa lên repo công khai vì archive có `Runtime/Config.ini`. Xem `MUSVEN_Gothic_R20_checkpoint_manifest.txt` để biết checksum và tình trạng lưu trữ. Không đưa cấu hình kết nối hoặc dữ liệu database lên repo.
 
-## Trạng thái nghiệm thu
-
-Gothic UI khởi chạy trong VM; kết nối SQL Muonline và truy vấn danh sách online đã được kiểm tra ở chế độ chỉ đọc. Dữ liệu tài khoản/kho thật và các lệnh điều khiển GameServer chưa được nghiệm thu. Xem biên bản để biết giới hạn và bước tiếp theo.
-
-## Lưu ý bảo mật
-
-Không commit `Config.ini`, thông tin đăng nhập, connection string thật, hoặc dữ liệu database. Hãy tạo `Config.ini` cục bộ từ template theo môi trường của bạn.
+## Nghiệm thu
+Gothic UI đã chạy trong VM; kết nối SQL Muonline và truy vấn online được kiểm tra ở chế độ chỉ đọc. Dữ liệu tài khoản/kho thật và lệnh điều khiển GameServer chưa nghiệm thu. Xem `MUSVEN_Gothic_R20_ACCEPTANCE_20261101.txt`.

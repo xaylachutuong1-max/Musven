@@ -1,0 +1,14 @@
+MUSVEN Admin Gothic R20 — nghiệm thu một phần
+Ngày: 2026-11-01
+
+- Đã chạy đúng R20 trong VM Hlena; Gothic UI tải thành công.
+- Kết nối database Muonline thành công ở chế độ READ-ONLY.
+- Truy vấn dbo.MEMB_STAT trả về 0 phiên online.
+- Catalog nạp 941 mục; preview vật phẩm hiển thị.
+- Kho hiển thị 240 ô và 5 hàng socket; chưa chọn tài khoản nên chưa nghiệm thu dữ liệu kho/túi thật.
+- Thẻ GameServer, DataServer, ConnectServer ở trạng thái “KHÔNG THỂ XÁC MINH”; lệnh điều khiển còn khóa do chưa xác minh API/backend.
+- Không ghi database và không điều khiển dịch vụ MU trong lần nghiệm thu này.
+
+GitHub:
+- Source ZIP đã rà soát được đăng trong repository công khai xaylachutuong1-max/Musven.
+- Checkpoint đầy đủ không được đưa lên repo vì chứa Runtime/Config.ini; bản gốc giữ cục bộ.

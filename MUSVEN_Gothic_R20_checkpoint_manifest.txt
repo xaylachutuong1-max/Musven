@@ -1,0 +1,12 @@
+MUSVEN Gothic R20 checkpoint — thông tin lưu trữ
+
+Checkpoint đầy đủ: MUSVEN_Gothic_R20_checkpoint_20261031.zip
+Kích thước: 76,120,755 bytes
+SHA-256: 05B8648543B25135E6E26EB69EDD002EFAC61CCA80BC0998FE0260E6E84E6595
+
+Tình trạng: giữ nguyên bản đầy đủ cục bộ để khôi phục.
+Không upload checkpoint đầy đủ lên repo công khai vì archive chứa Runtime/Config.ini.
+Repo công khai chỉ nhận gói source ZIP đã rà soát; gói này không có Config.ini thật và có Config.ini.template.
+
+SHA-256 gói source công khai:
+D7AC3FC24BB29F7AD3CD180C63AFDE542DD30BCF53A266DF87BC8486284EB268
